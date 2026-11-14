@@ -1,0 +1,12 @@
+# Thumbs and OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+# Editor and AI tool folders
+.vscode/
+.idea/
+.cursor/
+.claude/
+# Never commit secrets
+*.env
+.env*
