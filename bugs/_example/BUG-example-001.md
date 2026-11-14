@@ -1,35 +1,39 @@
-# BUG-example-001: Pay button keeps loading after UPI payment
+# BUG-example-001: Order A bill shows ₹790, should be ₹785
 
 > **EXAMPLE ONLY.** This shows what a finished report looks like. It is not a real bug and is left out of triage.
 
 | Field | Value |
 |---|---|
 | Reported by | example (non-tech) |
-| Date and time (IST) | 2026-11-14 15:20 |
-| Script step | C-07 |
-| App | Cashier POS (web) |
-| Page or screen | POS → Takeaway → Payment |
-| Device and browser | Windows laptop, Chrome |
+| Round | R1 2026-11-17 |
+| Date and time (IST) | 2026-11-17 15:20 |
+| Script step | C-31 |
+| App | Till |
+| Screen | Till → Billing → table 4 → bill |
+| Device | Till PC, Windows 11 |
 | Signed in as | cashier |
+| Bill, table or order | Table 4, order A (bill not yet paid) |
+| Amount expected / seen | ₹785 / ₹790 |
+| Internet | On |
 | How often | Every time |
-| How bad | Can't continue |
+| How bad | Can work around it |
 
 ## What I did
-1. Started a takeaway and added 2 × TEST Lemon Soda.
-2. Entered the customer name "Test Ravi".
-3. Chose UPI and clicked Pay.
+1. Seated table 4 with 2 guests.
+2. Added 1 Butter Chicken, 2 Butter Naan and 1 Jeera Rice, and sent them to the kitchen.
+3. Made the bill.
 
 ## What I expected
-The payment completes and a bill number is shown.
+The answer sheet for order A: Subtotal ₹680.00, service charge ₹68.00, GST ₹37.40, round off −₹0.40, To pay ₹785.
 
 ## What happened
-The Pay button kept spinning for about a minute, then showed: "Something went wrong. Please try again."
+The bill showed Subtotal ₹680.00, service charge ₹68.00, GST ₹37.40, and **To pay ₹790**. There was no round off line.
 
 ## Screenshots
 No screenshot (example).
 
 ## Tester's own words
-> C-07 clicked pay with upi it kept loading for a minute then said something went wrong
+> C-31 order A on table 4 bill says 790 not 785
 
 ## Possible duplicate of
 None
@@ -38,6 +42,10 @@ None
 (tech team only)
 
 ## Triage — AI guess, tech team confirms
-| Platform | Layer | Priority | Effort | Why |
+| Area | Likely fault | Priority | Effort | Why |
 |---|---|---|---|---|
-| Web | Backend | P0 | ? | A server error stops the cashier taking payment. |
+| Till | Till | P0 | ? | The total differs from the answer sheet by ₹5; the till works out its own bills. |
+
+## Retest
+| Round | Date | Result | Note |
+|---|---|---|---|
