@@ -16,7 +16,7 @@ The cashier stays signed in. You only type your PIN when the till asks for a man
 | Step | Do this | Check |
 |---|---|---|
 | M-01 | Ask the cashier to seat table 8, send 2 Tandoori Chicken (Full), make the bill and try a flat discount of ₹600. When the till asks for a manager, type a wrong PIN. | Refused. The discount is not applied. |
-| M-02 | Type your own PIN. | The ₹600 discount is applied once. The till stays signed in as the cashier, not as you. |
+| M-02 | Type your own PIN. | The ₹600 discount is applied once. **To pay ₹647.** (If you see ₹710, report it once: open question OQ-1 in [known limits](../KNOWN-LIMITS.md).) The till stays signed in as the cashier, not as you. |
 | M-03 | The cashier tries a second discount on the same bill straight after, without you. | The till asks for a manager again. Your approval covered one action only. Cancel it. |
 | M-04 | Ask the cashier to type their own PIN in the manager box. | Refused: a cashier cannot approve. Pay table 8 by Card. |
 | M-05 | The cashier seats table 7, sends 1 Tandoori Chicken (Full) and 1 Masala Chai, then cancels the Tandoori Chicken (₹580). | The till asks for a reason and for your PIN. With it, the dish is cancelled and the kitchen is told. |
@@ -42,7 +42,7 @@ The cashier stays signed in. You only type your PIN when the till asks for a man
 | Step | Do this | Check |
 |---|---|---|
 | M-17 | A guest's phone order is waiting on a waiter's table and the waiter is busy. Open Guest orders on the till and accept it yourself. | It goes to the kitchen. The waiting flag on the table clears. |
-| M-18 | Wait until a guest order is more than 90 seconds old without anyone accepting it. | You are alerted that an order is waiting, with the table. The alert stops once it is accepted or declined. |
+| M-18 | Wait until a guest order is more than 90 seconds old without anyone accepting it. | You are alerted that an order is waiting, with the table (on the dashboard's bell, the till, or your phone). The alert stops once it is accepted or declined. |
 | M-19 | On the floor, seat a table that shows Cleaning or Paid without waiting. | The till asks you to confirm ("Seat anyway") and for a reason. The table opens. |
 | M-20 | In the till's manager area, open Staff. Pick a `TEST` staff member and revoke their access now. | "Access revoked." Their PIN is refused at once on this till, and their waiter app stops working at their next action. Ask the owner to restore them afterwards. |
 | M-21 | In the dashboard, open Staff & Access. Set a new till PIN for a `TEST` staff member. | The new PIN works on the till within a minute or two. The old one does not. |

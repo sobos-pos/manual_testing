@@ -23,11 +23,11 @@ The tech lead keeps this page up to date.
 
 ## Meant to be this way: not a bug
 
-| It looks wrong because | Why it is right |
+| What you see | Why it is right |
 |---|---|
 | Bill numbers jump between tills | Each till has its own block of numbers. A number must **never repeat**; that would be a bug |
 | The till locks after 5 minutes | Each person unlocks with their own PIN, so every sale has a name on it |
-| A guest's phone order does not reach the kitchen at once | The table's waiter accepts it first. It then shows "Order waiting" after 90 seconds |
+| A guest's phone order does not reach the kitchen at once | The table's waiter accepts it first. If nobody accepts within 90 seconds, the table shows "Order waiting" |
 | The waiter's pairing code stops working | It lasts about 2 minutes. The waiter shows a fresh one |
 | A paid bill cannot be changed or deleted | A manager issues a credit note instead. The original bill stays as it was |
 | The cashier removes the service charge without a manager | The guest has a legal right to refuse it |
@@ -45,6 +45,6 @@ These are being decided. If you hit one, report it the first time and tell your 
 
 | ID | Question | Where you meet it |
 |---|---|---|
-| OQ-1 | **Service charge after a discount.** The rule is that the service charge is 10% of the bill *after* the discount. Order E with 10% off should be ₹1,476. If you see ₹1,491, the service charge was not recalculated. | C-37, MT-08 |
-| OQ-2 | **"Reserved" on the till's floor.** A booked table may not show as Reserved on the till or the waiter app yet, so "Seat anyway" for a reserved table may have nothing to act on. | C-25, W-09, D-12 |
-| OQ-3 | **Closing the day.** The Z report is run from the till's Cash drawer screen. Whether the dashboard should also close the day is not decided. | M-27 |
+| OQ-1 | **Service charge after a discount.** The rule is that the service charge is 10% of the bill *after* the discount. Order E with 10% off should be ₹1,476. If you see ₹1,491, the service charge was not recalculated. | C-37, M-02, MT-08 |
+| OQ-2 | **"Reserved" on the till's floor.** A booked table may not show as Reserved on the till or the waiter app yet, so "Seat anyway" for a reserved table may have nothing to act on. | D-43, M-19 |
+| OQ-3 | **Closing the day.** The Z report is run from the till's Cash drawer screen. Whether the dashboard should also close the day is not decided. | M-32, D-49 |

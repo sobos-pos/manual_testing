@@ -28,11 +28,11 @@ An AI tool that can open a folder on your computer, using your own account. Any 
 2. **Something wrong?**
    - Take a screenshot. Draw a red circle on the problem if you can.
    - Put the screenshot file into `bugs/<your-name>/inbox/`.
-   - Tell your AI in one line, e.g. *"Step C-14, Order A on table 4, bill says 790 not 785."*
+   - Tell your AI in one line, e.g. *"Step C-31, Order A on table 4, bill says 790 not 785."*
    - Answer its one or two questions. It saves and uploads the report.
-3. **Steps worked?** Tell your AI, e.g. *"C-01 to C-13 passed."*
-4. **Option not on your screen?** *"C-22 not there."*
-5. **Can't do a step because something isn't set up?** (no printer, no teammate, login doesn't work) *"C-30 blocked, no teammate."*
+3. **Steps worked?** Tell your AI, e.g. *"C-01 to C-30 passed."*
+4. **Option not on your screen?** *"C-21 not there."*
+5. **Can't do a step because something isn't set up?** (no printer, no teammate, login doesn't work) *"C-57 blocked, no teammate."*
 6. **Took cash, gave change, put cash in or out of the drawer?** Tell your AI, e.g. *"Cash: Order A, 785, given 800, change 15."* It keeps your cash sheet, so the drawer can be checked at the end.
 
 ## Which script is yours

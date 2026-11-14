@@ -101,7 +101,7 @@ Do each step in order. **Check** says what should happen. If it doesn't, screens
 | C-53 | Seat table 1 again (mark it clean first if it shows Cleaning) and send 1 Filter Coffee. **Move items**: move 1 Masala Chai from table 8 to table 1. | The chai leaves table 8's total and appears on table 1's. Nothing is lost or doubled. |
 | C-54 | Seat table R2 (Rooftop) with 2 guests. Add **order F** (1 Butter Chicken, 2 Garlic Naan, 2 Mango Lassi). Send. Make the bill. | Rooftop prices are used: Butter Chicken ₹400, Garlic Naan ₹95, Mango Lassi ₹145. **To pay ₹1,016** (not ₹912). |
 | C-55 | Settle tables 1, 8 and R2 by UPI (mark paid). | All three close. |
-| C-56 | Seat a table, send 2 different dishes, make the bill, then **split by items**: one dish on each bill. | Two bills. Every dish is on exactly one of them. Each bill has its own number and its own service charge and GST. The two totals add up to the original. Pay both by UPI. |
+| C-56 | Seat a table, send 2 different dishes, make the bill, then **split by items**: one dish on each bill. | Two bills. Every dish is on exactly one of them. Each bill has its own number and its own service charge, GST and round off. Together the two totals are within ₹1 of what one bill would have been. Pay both by UPI. |
 
 ## 8. Orders from guests' phones
 

@@ -76,7 +76,7 @@ Set these in Dashboard → Settings (search for the name). Everything not listed
 | Print a payment QR on the bill | Off | Off | `tech/printer.md` turns it on for its own checks |
 | Offers, Loyalty points | Off | Off | Not in this release (`KNOWN-LIMITS.md`) |
 
-**If the pilot outlets will let guests pay from their phones,** run `tech/guest-ordering-security.md` GS-21 to GS-25 with that setting on, in a session of its own, then turn it off again.
+**If the pilot outlets will let guests pay from their phones,** run `tech/guest-ordering-security.md` GS-27 to GS-33 with that setting on, in a session of its own, then turn it off again.
 
 **If the pilot outlets charge no service charge,** keep these settings anyway. The takeaway orders prove the no-charge arithmetic, and the table orders prove the charge is right when an outlet turns it on.
 
@@ -86,7 +86,7 @@ Set these in Dashboard → Settings (search for the name). Everything not listed
 - Give every tester who uses the till their own **till PIN** (Dashboard → Staff & Access → the person → till PIN). The lock screen has no username: the PIN is the person.
 - Roles needed: Owner, Manager, Cashier, Waiter (two), Kitchen. Add `TEST` to the name of any extra staff you create.
 - For `tech/roles-and-security.md` you also need: a second outlet in the same organisation, a second organisation, and a platform admin login with MFA.
-- Note that the seeded **Manager** has the same access as the Owner. `tech/roles-and-security.md` RS-03 creates a narrower outlet-only role to test the difference.
+- Note that the seeded **Manager** has the same access as the Owner. `tech/roles-and-security.md` RS-20 creates a narrower outlet-only role to test the difference.
 
 ## 5. Equipment
 

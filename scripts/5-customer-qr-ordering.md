@@ -44,7 +44,7 @@ This is **order G** on the test restaurant page.
 | G-15 | Tap Place order twice very quickly on a second order of 1 Gulab Jamun. | One order is sent, not two. |
 | G-16 | Ask the waiter to reject that order with a reason (W-27). | Your screen shows it was not accepted, with the waiter's reason. |
 | G-17 | Place round 2: 1 Rasmalai. You do not scan anything again. | It is sent without pairing again. After the waiter accepts it (W-28), it shows as accepted. |
-| G-18 | Open My orders. | Both accepted rounds are listed, and the running total covers only accepted rounds: ₹590 before the service charge and GST. The rejected Gulab Jamun is not counted. |
+| G-18 | Open My orders. | Both accepted rounds are listed. The running total covers only accepted rounds: ₹590 of dishes (it may be shown with GST added). The rejected Gulab Jamun is not counted. |
 | G-19 | Tap Call server. Then Ask for water. Then Ask for the bill. Then Ready to order, if it is shown. | Each shows as sent, then "On their way" when the waiter picks it up (W-29, W-30). Asking for the same thing again says you already asked. |
 | G-20 | Ask the waiter to prepare the bill. Look for a way to pay on your phone. | The table shows the bill is being settled. There is no pay button: you are told your server will take payment at the table. The bill is **₹681**. |
 
